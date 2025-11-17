@@ -1,55 +1,88 @@
 # Project information
-site_name: 'مستندات نرم افزار آزمایشی '
-site_description: 'مستندات REST API آزمایشی'
-site_author: 'mohammadreza berneti'
-site_url: 'http://berneti.ir'
+site_name: "نوا تیچ"
+site_description: "مستندات رسمی دستیار معلم"
+# site_author: "Mohammadreza Berneti"
+# site_url: "http://berneti.ir"
 
 # Repository
-repo_name: 'mkdocs-rtl'
-repo_url: 'https://github.com/mberneti/mkdocs-rtl'
+repo_name: "ehs22n/school-AI"
+repo_url: "https://github.com/ehs22n/school-AI"
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2017 Mohammadreza Berneti'
+copyright: "© 2025-2026"
 
-docs_dir: 'pages'
-site_dir: 'docs'
-# base_url: 'bb'
+# Directories
+docs_dir: "pages"
+site_dir: "docs"
 
-pages:
-    - مقدمه: index.md
-    - سرویس‌ها:
-      - 'احراز هویت': 'accounts-services.md'
+# Navigation
+nav:
+  - مقدمه: index.md
+  - بخش فنی: services.md
+  - قوانین: rules.md
+  - موجودیت ها و امکانات پروژه: entities_features.md
 
-# Documentation and theme
-theme: 'material'
-theme_dir: 'theme'
+     
+
+# Theme configuration
+theme:
+  name: material
+  language: fa  # Enables Persian translations and RTL layout
+  direction: rtl  # Right-to-left text direction
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+    - content.action.edit
+    - toc.integrate
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: حالت تاریک
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: حالت روشن
+  font:
+    text: "Vazirmatn"
+    code: "Fira Code"
+  icon:
+    repo: fontawesome/brands/github
+
+# Custom CSS
 extra_css:
-  - 'custom-docs.css'
+  - "theme/custom-docs.css"
 
-# Options
-# extra:
-#   logo: 'images/logo.svg'
-#   palette:
-#     primary: 'indigo'
-#     accent: 'indigo'
-#   font:
-#     text: 'Roboto'
-#     code: 'Roboto Mono'
-#   social:
-#     - type: 'github'
-#       link: 'https://github.com/john-doe'
-#     - type: 'twitter'
-#       link: 'https://twitter.com/john-doe'
-#     - type: 'linkedin'
-#       link: 'https://linkedin.com/in/john-doe'
+# Extra options
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ehs22n
+      name: GitHub
+  generator: false
 
-# Google Analytics
-# google_analytics:
-#   - 'UA-XXXXXXXX-X'
-#   - 'auto'
-
-# Extensions
+# Markdown extensions
 markdown_extensions:
   - admonition
-  - codehilite(guess_lang=false)
-  - toc(permalink=⚓)
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - toc:
+      permalink: ⚓
+  - pymdownx.superfences
+  - attr_list
+  - footnotes
+
+# Plugins (optional but recommended)
+plugins:
+  - search:
+      separator: '[\s\-]+'
+      lang: ['fa', 'en']
