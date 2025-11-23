@@ -126,6 +126,6 @@
 
 
 # پنل ادمین
-[مشاهده جزئیات پنل ادمین](/admin_panel_features.md)
+[مشاهده جزئیات پنل ادمین](/nova/admin_panel_features)
 
 
