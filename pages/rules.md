@@ -2,8 +2,35 @@
 
 !!! warning "پروتوکل های پروژه"
     رعایت این قوانین برای تمامی اعضای تیم **الزامی** است.  
-    هدف، ایجاد یک ساختار استاندارد، قابل‌نگهداری و توسعه‌پذیر است.
-   
+   هدف، ایجاد یک ساختار استاندارد، قابل‌نگهداری و توسعه‌پذیر است.
+
+
+
+## Git و مستندسازی
+
+نام `commit` باید واضح و استاندارد باشد:
+
+`feat:` برای ویژگی جدید
+
+`fix:` برای رفع باگ
+
+`refactor:` برای بازنویسی بدون تغییر رفتار
+
+`docs:` برای تغییر مستندات
+
+مثال:
+
+```bash
+
+feat(users): add user registration endpoint
+
+fix(auth): resolve token refresh issue
+
+refactor(core): simplify validation logic
+
+docs(api): update usage examples
+
+!!! note ""
 
 ## Front-end
 
@@ -200,32 +227,3 @@ MAX_UPLOAD_SIZE = 10485760
 
 
 ---
-
-!!! note ""
-
-
-## Git و مستندسازی
-
-نام `commit` باید واضح و استاندارد باشد:
-
-`feat:` برای ویژگی جدید
-
-`fix:` برای رفع باگ
-
-`refactor:` برای بازنویسی بدون تغییر رفتار
-
-`docs:` برای تغییر مستندات
-
-مثال:
-
-```bash
-
-feat(users): add user registration endpoint
-
-fix(auth): resolve token refresh issue
-
-refactor(core): simplify validation logic
-
-docs(api): update usage examples
-
-```
