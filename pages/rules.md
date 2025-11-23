@@ -1,47 +1,30 @@
-# پروتوکل های پروژه
+# # پروتکل‌های پروژه
 
-!!! warning "پروتوکل های پروژه"
+!!! warning "پروتکل‌های پروژه"
     رعایت این قوانین برای تمامی اعضای تیم **الزامی** است.  
-   هدف، ایجاد یک ساختار استاندارد، قابل‌نگهداری و توسعه‌پذیر است.
+    هدف، ایجاد یک ساختار استاندارد، قابل‌نگهداری و توسعه‌پذیر است.
 
-
-!!! note ""
-
+---
 
 ## Git و مستندسازی
 
 نام `commit` باید واضح و استاندارد باشد:
 
-`feat:` برای ویژگی جدید
+- `feat:` برای ویژگی جدید
+- `fix:` برای رفع باگ
+- `refactor:` برای بازنویسی بدون تغییر رفتار
+- `docs:` برای تغییر مستندات
 
-`fix:` برای رفع باگ
-
-`refactor:` برای بازنویسی بدون تغییر رفتار
-
-`docs:` برای تغییر مستندات
-
-مثال:
+### مثال:
 
 ```bash
-
 feat(users): add user registration endpoint
-
 fix(auth): resolve token refresh issue
-
 refactor(core): simplify validation logic
-
 docs(api): update usage examples
+```
 
-!!! note ""
 ```js
-## Front-end
-
-درون هر تابع باید کارایی آن تابع مشخص شود مانند مثال زیر:
-
-
-
-
-
 function factorial(n) {
     /*
         * This function calculates the factorial of a given number.
